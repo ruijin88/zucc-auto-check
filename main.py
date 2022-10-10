@@ -49,8 +49,8 @@ def sign(school_id, password, auto_position, vaccine):
             # 填写表单并提交
             with open("./form.json", "r", encoding='utf-8') as f:
                 form = json.load(f)
-                if form['questions'] != questions:
-                    return "打卡表单已更新，当前版本不可用"
+#                 if form['questions'] != questions:
+#                     return "打卡表单已更新，当前版本不可用"
 
                 answer = form['answer']
                 answer["填报日期(Date)"] = str(
